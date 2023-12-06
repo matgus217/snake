@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Noto+Sans:wght@300&family=Nova+Square&family=Playpen+Sans:wght@500&family=Titillium+Web:wght@300&display=swap');
+
+body {
+    font-family: 'Playpen Sans', cursive;
+    background-color: lightgreen;
+}
+
+.open-text {
+    font-size: 50px;
+    text-align: center;
+}
+
+.open-tag2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#button {
+    margin-left: 550px;
+    border-radius: 20px;
+    background-color: red;
+    margin-top: 100px;
+
+}
+
+.first-button {}
+
+#snake {
+    height: 150px;
+    width: 150px;
+}
+
+.welcome {}
