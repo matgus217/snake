@@ -46,9 +46,17 @@ body {
     width: 150px;
 }
 
-.welcome {}
-
-.rules {}
+.game {
+    width: 80vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background: red;
+    margin-top: 100px;
+}
 
 .game-details {
     font-weight: 500;
@@ -62,6 +70,7 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    background: #212837;
+    background: white;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+
 }
