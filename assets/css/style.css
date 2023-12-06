@@ -16,14 +16,30 @@ body {
 }
 
 #button {
-    margin-left: 550px;
+    margin-left: 570px;
     border-radius: 20px;
     background-color: red;
     margin-top: 100px;
 
 }
 
-.first-button {}
+#button2 {
+    border-radius: 15px;
+}
+
+#left-arrow {
+    height: 40px;
+    width: 50px;
+}
+
+.back {
+    font-family: 'Playpen Sans', cursive;
+}
+
+.begin {
+    font-size: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
 
 #snake {
     height: 150px;
@@ -31,3 +47,21 @@ body {
 }
 
 .welcome {}
+
+.rules {}
+
+.game-details {
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: #212837;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
