@@ -3,6 +3,9 @@
 body {
     font-family: 'Playpen Sans', cursive;
     background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
 }
 
 .open-text {
@@ -17,14 +20,14 @@ body {
 
 #button {
     margin-left: 570px;
-    border-radius: 20px;
-    background-color: red;
+    border-radius: 50px;
+    background-color: white;
     margin-top: 100px;
 
 }
 
 #button2 {
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 #left-arrow {
@@ -54,7 +57,7 @@ body {
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    background: red;
+    background: white;
     margin-top: 100px;
 }
 
@@ -70,7 +73,22 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    background: white;
+    background: grey;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 
+}
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #B8C6DC;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid #171B26;
 }
