@@ -32,35 +32,30 @@
 
     <title>Snake</title>
   </head>
-  <body>
-    <div second-button>
-      <a href="index.html">
-        <button id="button2">
-          <img
-            id="left-arrow"
-            src="assets/images/left-arrow (1).png"
-            alt="left-button"
-          />
-          <p class="back">"Press here to go back"</p>
-        </button>
-      </a>
-    </div>
-    <div class="game">
-      <div class="game-details">
-        <span class="score">Score: 0</span>
-        <span class="high-score">Highscore: 1</span>
-      </div>
 
-      <div class="game-board">
-        <div class="food" style="grid-area: 23 / 20"></div>
+  <body>
+<div class="game">
+    <div class="details">
+        <span class="score">Score: 0</span>
+        <span class="high-score">High Score: 5</span>
+    </div>
+    <div class="game-board">
+        <div class="food" style="grid-area: 23 / 14"></div>
         <div class="head" style="grid-area: 5 / 5"></div>
-      
+    </div>
     <div class="controls">
         <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
         <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
         <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
         <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
     </div>
-<script src="assets/js/index.js"></script>
+</div>
+    <button id="play-again">
+        <i class="fas fa-play"></i>
+        Play Again
+    </button>
+    
+    </body>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
