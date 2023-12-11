@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
@@ -22,42 +36,98 @@
     <title>Space Memory</title>
   </head>
 
-  <body>
-   
-    
+  
+<body id="game">
     <header>
-        <h1 class="title">
-            Space Memory
-        </h1>
+        <h1 class="title">Space Memory</h1>
     </header>
-
-    <section class="game">
-        <section class="details">
-            <div class="score">
-                <p class="your-score">
-                    Your Points:
-                    <span id="point"> 0</span>
-                </p>
-            </div>
-            
-        </section>
-    </section>
 <div class="second-button">
     <a href="index.html">
         <button class="button2">
-            <p class="back">Go Back</p>
+            <p class="go-back">
+                Go back
+            </p>
         </button>
     </a>
 </div>
-<div id="pop-up" class="text">
-    <h1>You matched all cards</h1>
-    <p>Points <span id="finalPoints">0</span></p>
-    <button class="button3" id="play-again">Play Again</button>
-</div>
+    <section class="space">
+        <section class="planet">
+            <div class="details">
+                <div class="score">
+                    <p>Points: <span id="point"> 0</span></p>
+                </div>
+            </div>
+
+            <div id="pop" class="text">
+                <h1>You survived the space!</h1>
+                <p>Points: <span id="your-points">0</span></p>
+                <button class="button3" id="retry">Play Again</button>
+            </div>
+
+            <section class="memory-game">
+                <div class="card" data-cards="card1">
+                    <img class="front" src="assets/images/astronaut.png" alt="astronaut">
+                    <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+                <div class="card" data-cards="card1">
+                    <img class="front" src="assets/images/astronaut.png" alt="astronaut">
+                <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+
+                <div class="card" data-cards="card2">
+                    <img class="front" src="assets/images/meteor.png" alt="meteor">
+                <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+                <div class="card" data-cards="card2">
+                    <img class="front" src="assets/images/meteor.png" alt="meteor">
+                <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+
+                <div class="card" data-cards="card3">
+                    <img class="front" src="assets/images/satellite.png" alt="satellite">
+                    <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+                <div class="card" data-cards="card3">
+                <img class="front" src="assets/images/satellite.png" alt="satellite">
+                <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+
+                <div class="card" data-cards="card4">
+                    <img class="front" src="assets/images/star.png" alt="star">
+                    <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+                <div class="card" data-cards="card4">
+                    <img class="front" src="assets/images/star.png" alt="star">
+                    <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+
+                <div class="card" data-cards="card5">
+                    <img class="front" src="assets/images/ufo.png" alt="ufo">
+                <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+                <div class="card" data-cards="card5">
+                    <img class="front" src="assets/images/ufo.png" alt="ufo">
+                    <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+
+                <div class="card" data-cards="card6">
+                    <img class="front" src="assets/images/spacecraft.png" alt="spacecraft">
+                <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+                <div class="card" data-cards="card6">
+                <img class="front" src="assets/images/spacecraft.png" alt="spacecraft">
+                    <img class="back" src="assets/images/solar-system.png" alt="solar-system">
+                </div>
+            </section>
+        </section>
+    </section>
+
 
     
-    
-        </body>
+
+
+
+
     <script src="assets/js/index.js"></script>
   </body>
 </html>
