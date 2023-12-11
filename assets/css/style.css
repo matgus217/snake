@@ -1,127 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Noto+Sans:wght@300&family=Nova+Square&family=Playpen+Sans:wght@500&family=Titillium+Web:wght@300&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body {
+    background: url(../images/5445590.jpg);
+    font-family: 'Playpen Sans', cursive;
+    color: white;
 }
 
-body {
+
+.open-tag {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+
+.button {
+    margin-left: 550px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: rebeccapurple;
+    border: none;
+    color: #222738;
+    border-radius: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: purple;
+
+
+}
+
+.begin {
+    font-size: 20px;
     font-family: 'Playpen Sans', cursive;
+    color: white;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #E3F2FD;
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
 
-    .open-text {
-        font-size: 50px;
-        text-align: center;
-    }
+.your-score {
+    text-align: center
+}
 
-    .welcome {
-        text-align: center;
-        font-size: 40px;
-    }
+.button2 {
+    margin-left: 550px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: rebeccapurple;
+    border: none;
+    color: #222738;
+    border-radius: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
 
-    .rules {
-        text-align: center;
-    }
-
-    .open-tag2 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .button {
-        margin-left: 550px;
-        border-radius: 15px;
-    }
+.button2:hover {
+    background: purple;
 
 
-    .begin {
-        font-size: 20px;
-        font-family: 'Playpen Sans', cursive;
-    }
-
-    #snake {
-        height: 150px;
-        width: 150px;
-    }
-
-    .game {
-        width: 65vmin;
-        height: 70vmin;
-        display: flex;
-        overflow: hidden;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 5px;
-        background: #293447;
-        box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
-    }
-
-    .details {
-        color: #B8C6DC;
-        font-weight: 500;
-        font-size: 1.2rem;
-        padding: 20px 27px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .game-board {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        background: #212837;
-        grid-template: repeat(30, 1fr) / repeat(30, 1fr);
-    }
-
-    .game-board .food {
-        background: #FF003D;
-    }
-
-    .game-board .head {
-        background: #60CBFF;
-    }
-
-    .controls {
-        display: none;
-        justify-content: space-between;
-    }
-
-    .controls i {
-        padding: 25px 0;
-        text-align: center;
-        font-size: 1.3rem;
-        color: #B8C6DC;
-        width: calc(100% / 4);
-        cursor: pointer;
-        border-right: 1px solid #171B26;
-    }
+}
 
 
+.back {
+    font-size: 20px;
+    font-family: 'Playpen Sans', cursive;
+    color: white;
+}
 
 
-    #play-again {
-        font-size: 15px;
-        padding: 10px 20px;
-        background: #6e7888;
-        border: none;
-        color: #222738;
-        border-radius: 20px;
-        font-weight: 800;
-        cursor: pointer;
-        transition: all 200ms purple (0.4, 0, 0.2, 1);
-        margin-bottom: 350px;
+#pop-up {
+    visibility: hidden;
+    border-radius: 10px;
+    background: #ffbdf1;
+    background-image: linear-gradient(to bottom, #76c3f0 0%, #2580b3 100%);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 5px solid #064d75;
+}
 
-    }
+#pop-up>h1,
+#pop-up p {
+    font-weight: bolder;
+}
 
-    #play-again:hover {
-        background: #a6aab5;
-        background: purple;
-        transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-    }
+#play-again {
+    border: 2px solid #2580b3;
+    border-radius: 5px;
+    background: #2580b3;
+}
+
+#play-again:hover {
+    border: 2px solid #064d75;
+    background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
+}

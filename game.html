@@ -6,23 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
     <!--Links -->
@@ -30,32 +19,45 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>Snake</title>
+    <title>Space Memory</title>
   </head>
 
   <body>
-<div class="game">
-    <div class="details">
-        <span class="score">Score: 0</span>
-        <span class="high-score">High Score: 5</span>
-    </div>
-    <div class="game-board">
-        <div class="food" style="grid-area: 23 / 14"></div>
-        <div class="head" style="grid-area: 5 / 5"></div>
-    </div>
-    <div class="controls">
-        <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
-        <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
-        <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
-        <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
-    </div>
-</div>
-    <button id="play-again">
-        <i class="fas fa-play"></i>
-        Play Again
-    </button>
+   
     
-    </body>
+    <header>
+        <h1 class="title">
+            Space Memory
+        </h1>
+    </header>
+
+    <section class="game">
+        <section class="details">
+            <div class="score">
+                <p class="your-score">
+                    Your Points:
+                    <span id="point"> 0</span>
+                </p>
+            </div>
+            
+        </section>
+    </section>
+<div class="second-button">
+    <a href="index.html">
+        <button class="button2">
+            <p class="back">Go Back</p>
+        </button>
+    </a>
+</div>
+<div id="pop-up" class="text">
+    <h1>You matched all cards</h1>
+    <p>Points <span id="finalPoints">0</span></p>
+    <button class="button3" id="play-again">Play Again</button>
+</div>
+
+    
+    
+        </body>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
