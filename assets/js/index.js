@@ -13,15 +13,15 @@ const body = document.getElementsByTagName("body")[0];
 var points = 0;
 var finalPoint = 0;
 var win = 0;
-
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+
+
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
-
     this.classList.add("flip");
 
     if (!hasFlippedCard) {
@@ -29,6 +29,7 @@ function flipCard() {
         firstCard = this;
 
         return;
+
     }
 
     secondCard = this;
@@ -51,7 +52,7 @@ function cardsMatch() {
     finalScore.innerHTML = finalPoint;
     score.innerHTML = points;
 
-    if (win === 12) {
+    if (win === 16) {
         pop.style.visibility = "visible";
     }
 
@@ -86,7 +87,7 @@ play.addEventListener("click", playAgain);
 
 (function shuffle() {
     cards.forEach((card) => {
-        let randomPos = Math.floor(Math.random() * 12);
+        let randomPos = Math.floor(Math.random() * 16);
         card.style.order = randomPos;
     });
 })(); //IIFE

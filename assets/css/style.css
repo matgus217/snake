@@ -22,6 +22,11 @@ body {
     text-align: center;
 }
 
+.open-tag,
+h1 {
+    font-size: 40px;
+}
+
 .rules p {
     font-size: 30;
     text-align: center;
@@ -141,7 +146,6 @@ body {
 #pop {
     visibility: hidden;
     border-radius: 20px;
-
     margin: auto;
     position: absolute;
     top: 50%;
@@ -164,19 +168,29 @@ body {
 }
 
 #retry:hover {
-    border: 2px solid #064d75;
-    background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
+    background: rebeccapurple;
 }
+
+
+
 /*LARGE DEVICES*/
 @media (min-width: 992px) {
-    .mainTag {
+    .open-tag {
         font-size: 80px;
         margin-top: 60px;
     }
 
-    .welcome {
+    .rules {
         font-size: 35px;
     }
+
+    .button {
+        font-size: 40px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+
 
     .button3 {
         font-size: 40px;
@@ -189,8 +203,8 @@ body {
         height: 530px;
     }
 
-    .front-face,
-    .back-face {
+    .front,
+    .back {
         padding: 10px;
     }
 
@@ -198,9 +212,7 @@ body {
         padding: 50px;
     }
 
-    .headTag {
-        font-size: 70px;
-    }
+
 
     .points>p,
     #pop>h1,
@@ -213,14 +225,21 @@ body {
 /*medium devices*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .mainTag {
+    .open-tag {
         font-size: 75px;
         margin-top: 60px;
     }
 
-    .welcome {
+    .rules {
         font-size: 30px;
     }
+
+    .button {
+        font-size: 35px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
 
     .button3 {
         font-size: 35px;
@@ -243,9 +262,7 @@ body {
         top: 40%;
     }
 
-    .headTag {
-        font-size: 70px;
-    }
+
 
     .points>p,
     #pop>h1,
@@ -257,14 +274,22 @@ body {
 
 /*SMALL DEVICES*/
 @media (min-width: 576px) and (max-width: 767px) {
-    .mainTag {
+    .open-tag {
         font-size: 60px;
         margin-top: 50px;
     }
 
-    .welcome {
+    .rules {
         font-size: 25px;
     }
+
+    .button {
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+
 
     .button3 {
         font-size: 30px;
@@ -287,14 +312,62 @@ body {
         top: 30%;
     }
 
-    .headTag {
-        font-size: 50px;
-    }
+
 
     .points>p,
-    #won>h1,
-    #won p,
-    #playAgain {
+    #pop>h1,
+    #pop p,
+    #retry {
         font-size: 30px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .open-tag {
+        font-size: 75px;
+        margin-top: 60px;
+    }
+
+    .rules {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 35px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-left: 10px
+    }
+
+
+    .button3 {
+        font-size: 35px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .memory-game {
+        width: 400px;
+        height: 300px
+    }
+
+    .front,
+    .back {
+        padding: 10px;
+    }
+
+    #pop {
+        padding: 50px;
+        top: 40%;
+    }
+
+
+
+    .points>p,
+    #pop>h1,
+    #pop p,
+    #retry {
+        font-size: 35px;
     }
 }
