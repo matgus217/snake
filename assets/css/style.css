@@ -101,7 +101,7 @@ body {
     z-index: -1;
 }
 
-.card {
+.memory-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
@@ -113,12 +113,12 @@ body {
 
 }
 
-.card:active {
+.memory-card:active {
     transform: scale(0.97);
     transition: transform 0.2s;
 }
 
-.card-flip {
+.memory-card.flip {
     transform: rotateY(180deg);
 
 }
@@ -167,7 +167,6 @@ body {
     border: 2px solid #064d75;
     background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
 }
-
 /*LARGE DEVICES*/
 @media (min-width: 992px) {
     .mainTag {
@@ -283,7 +282,7 @@ body {
         padding: 6px;
     }
 
-    #pop{
+    #pop {
         padding: 35px;
         top: 30%;
     }
