@@ -74,6 +74,9 @@ function cardsDontMatch() {
     score.innerHTML = points;
 }
 
+
+
+
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
@@ -90,6 +93,6 @@ play.addEventListener("click", playAgain);
         let randomPos = Math.floor(Math.random() * 16);
         card.style.order = randomPos;
     });
-})(); //IIFE
+})();
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
