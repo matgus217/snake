@@ -129,6 +129,7 @@ h1 {
 }
 
 
+
 .front,
 .back {
     width: 100%;
@@ -141,7 +142,7 @@ h1 {
 
 .front {
     transform: rotateY(180deg);
-    
+
 }
 
 #pop {

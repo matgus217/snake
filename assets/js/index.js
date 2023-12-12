@@ -19,80 +19,81 @@ let firstCard, secondCard;
 
 
 
-function flipCard() {
-    if (lockBoard) return;
-    if (this === firstCard) return;
-    this.classList.add("flip");
 
-    if (!hasFlippedCard) {
-        hasFlippedCard = true;
-        firstCard = this;
+    function flipCard() {
+        if (lockBoard) return;
+        if (this === firstCard) return;
+        this.classList.add("flip");
 
-        return;
+        if (!hasFlippedCard) {
+            hasFlippedCard = true;
+            firstCard = this;
 
+            return;
+
+        }
+
+        secondCard = this;
+        checkCards();
     }
 
-    secondCard = this;
-    checkCards();
-}
+    function checkCards() {
+        let isMatch = firstCard.dataset.cards === secondCard.dataset.cards;
 
-function checkCards() {
-    let isMatch = firstCard.dataset.cards === secondCard.dataset.cards;
-
-    isMatch ? cardsMatch() : cardsDontMatch();
-}
-
-function cardsMatch() {
-    firstCard.removeEventListener("click", flipCard);
-    secondCard.removeEventListener("click", flipCard);
-
-    points += 1;
-    finalPoint = points;
-    win += 2;
-    finalScore.innerHTML = finalPoint;
-    score.innerHTML = points;
-
-    if (win === 16) {
-        pop.style.visibility = "visible";
+        isMatch ? cardsMatch() : cardsDontMatch();
     }
 
-    resetBoard();
-}
+    function cardsMatch() {
+        firstCard.removeEventListener("click", flipCard);
+        secondCard.removeEventListener("click", flipCard);
 
-function cardsDontMatch() {
-    lockBoard = true;
+        points += 1;
+        finalPoint = points;
+        win += 2;
+        finalScore.innerHTML = finalPoint;
+        score.innerHTML = points;
 
-    setTimeout(() => {
-        firstCard.classList.remove("flip");
-        secondCard.classList.remove("flip");
+        if (win === 16) {
+            pop.style.visibility = "visible";
+        }
 
         resetBoard();
-    }, 1000);
+    }
+
+    function cardsDontMatch() {
+        lockBoard = true;
+
+        setTimeout(() => {
+            firstCard.classList.remove("flip");
+            secondCard.classList.remove("flip");
+
+            resetBoard();
+        }, 1000);
 
 
-    finalPoint = points;
-    score.innerHTML = points;
-}
+        finalPoint = points;
+        score.innerHTML = points;
+    }
 
 
 
 
-function resetBoard() {
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
-}
+    function resetBoard() {
+        [hasFlippedCard, lockBoard] = [false, false];
+        [firstCard, secondCard] = [null, null];
+    }
 
-function playAgain() {
-    location.reload();
-}
+    function playAgain() {
+        location.reload();
+    }
 
-play.addEventListener("click", playAgain);
+    play.addEventListener("click", playAgain);
 
-(function shuffle() {
-    cards.forEach((card) => {
-        let randomPos = Math.floor(Math.random() * 16);
-        card.style.order = randomPos;
-    });
-})();
+    (function shuffle() {
+        cards.forEach((card) => {
+            let randomPos = Math.floor(Math.random() * 16);
+            card.style.order = randomPos;
+        });
+    })();
 
-cards.forEach((card) => card.addEventListener("click", flipCard));
+    cards.forEach((card) => card.addEventListener("click", flipCard));
