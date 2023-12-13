@@ -59,10 +59,78 @@ Space Memory is a memory game for children. It is a simple game with simple inst
 - And colors that are easy for the eye to catch.
 - I have worked with Purple, Blue, White and Black.
 
-- **Testing**
+## Testing
+
 - I have tested the game on diffrent devices. My sister and my wife has also tried it on their own mobile devices.
 - The game always works.
 - The header, the pictures, the result and the audiofile works and it is readable.
 
+### Lighthouse
 
+- I used Lighthouse within the Chrome Developer Tools to test performance, accesibility, best practices and SEO of the website for both desktop and mobile.
+-Index.HTML on Mobile:
 
+![Skärmavbild 2023-12-13 kl  08 45 28](https://github.com/matgus217/space-memory/assets/147818054/796d1e58-e44b-4456-a5ae-15d3b10bc2be)
+
+-Index.HTML on Deskop:
+
+![Skärmavbild 2023-12-13 kl  08 47 13](https://github.com/matgus217/space-memory/assets/147818054/b42b56a3-e73c-4c3f-a03d-b362dfbf2067)
+
+-Game.HTML on Mobile:
+
+![Skärmavbild 2023-12-13 kl  08 48 49](https://github.com/matgus217/space-memory/assets/147818054/419fde80-50a0-44ed-9c0a-a767286961d5)
+
+-Game.HTML on Deskop:
+
+![Skärmavbild 2023-12-13 kl  08 49 56](https://github.com/matgus217/space-memory/assets/147818054/4c427bb0-f7d6-4e93-b5ee-0ced9ca84706)
+
+### How does it look on different screen sizes?
+
+#### Mobile
+
+#### Index.HTMl on Mobile
+
+![Skärmavbild 2023-12-13 kl  08 51 58](https://github.com/matgus217/space-memory/assets/147818054/eb21c2e2-58b1-4c90-bd31-66e6e74ea431)
+
+#### Game.HTML on Mobile
+
+![Skärmavbild 2023-12-13 kl  08 52 24](https://github.com/matgus217/space-memory/assets/147818054/55a7cd58-4e7a-4a90-8469-9ae85de92a54)
+
+#### Tablets
+
+#### Index.HTML on Tablets
+
+![Skärmavbild 2023-12-13 kl  08 55 23](https://github.com/matgus217/space-memory/assets/147818054/1f654a10-d97a-43ce-a2a6-4c4c7613d666)
+
+#### Game.HTML on Tablets
+
+![Skärmavbild 2023-12-13 kl  08 55 42](https://github.com/matgus217/space-memory/assets/147818054/ae8b45ac-2aab-404c-8ec8-1caee364d286)
+
+#### Laptops
+
+#### Index.HTML on Laptops
+
+![Skärmavbild 2023-12-13 kl  08 57 25](https://github.com/matgus217/space-memory/assets/147818054/317cc791-2a63-40ca-8ece-3c6f6b20aafa)
+
+#### Game.HTML on Laptops
+
+![Skärmavbild 2023-12-13 kl  08 57 46](https://github.com/matgus217/space-memory/assets/147818054/c5aa3ee5-8644-4dfc-82ce-c30b7a4f6198)
+
+### Bugs
+
+- There are no bugs.
+
+## Deployment
+
+- The site was deployed to Github pages and the steps i followed were:
+- In the Github repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Master Branch
+
+## Credits
+
+### Content
+
+- The pictures I used in the memorygame was taken and downloaded from [flaticon](https://www.flaticon.com/)
+- The favicon i used was taken from [Favicon](https://favicon.io/)
+- The background picture i used for both Index.HTML and Game.HTML was taken and downloaded from[Freepik](https://www.freepik.com/)
+- I have looked at the JavaScript Essentials at [Code Institute](https://learn.codeinstitute.net/dashboard)
