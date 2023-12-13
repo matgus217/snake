@@ -7,8 +7,7 @@ const score = document.getElementById("point");
 const finalScore = document.getElementById("your-points");
 const pop = document.getElementById("pop");
 const play = document.getElementById("retry");
-const button = document.getElementsByClassName("button3");
-const body = document.getElementsByTagName("body")[0];
+
 
 
 
