@@ -58,3 +58,8 @@ Space Memory is a memory game for children. It is a simple game with simple inst
 - I have used colors that match and children usually likes.
 - And colors that are easy for the eye to catch.
 - I have worked with Purple, Blue, White and Black.
+
+## Testing
+- I have tested the game on diffrent devices. My sister and my wife has also tried it on their own mobile devices.
+- The game always works.
+- The header, the pictures, the result and the audiofile works and it is readable.
