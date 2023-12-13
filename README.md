@@ -2,6 +2,8 @@
 
 Space Memory is a memory game for children. It is a simple game with simple instructions. On the first page, the player gets to know the rules and enters the game with just one click of a button.
 
+Link to the game:
+
 ## Existing Features
 
 - **Header**
@@ -64,6 +66,17 @@ Space Memory is a memory game for children. It is a simple game with simple inst
 - I have tested the game on diffrent devices. My sister and my wife has also tried it on their own mobile devices.
 - The game always works.
 - The header, the pictures, the result and the audiofile works and it is readable.
+
+### Testing code via validators
+
+**JavaScript**
+- No errors or warnings were returned when passing through the official [JSHint validator](https://jshint.com/)
+
+**CSS**
+
+- No errors were returned when passing through the official Jigsaw validator[Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatgus217.github.io%2Fspace-memory%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+
+- No errors were returned when passing through the official Jigsaw validator[Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatgus217.github.io%2Fspace-memory%2Fgame.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
 ### Lighthouse
 
