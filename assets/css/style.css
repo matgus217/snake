@@ -34,7 +34,7 @@ h1 {
 
 
 
-.button {
+.first-button {
     border-radius: 15px;
     font-size: 15px;
     padding: 10px 20px;
@@ -45,9 +45,11 @@ h1 {
     font-weight: 800;
     cursor: pointer;
     margin-top: 200px;
+    width: 140px;
+    margin-left: 900px;
 }
 
-.button:hover {
+.first-button:hover {
     background: rebeccapurple;
 
 
@@ -187,7 +189,7 @@ h1 {
         font-size: 35px;
     }
 
-    .button {
+    .first-button {
         font-size: 40px;
         padding: 10px 20px;
         border-radius: 10px;
@@ -237,7 +239,7 @@ h1 {
         font-size: 30px;
     }
 
-    .button {
+    .first-button {
         font-size: 35px;
         padding: 10px 20px;
         border-radius: 10px;
@@ -286,7 +288,7 @@ h1 {
         font-size: 25px;
     }
 
-    .button {
+    .first-button {
         font-size: 30px;
         padding: 10px 20px;
         border-radius: 10px;
@@ -336,8 +338,8 @@ h1 {
         font-size: 30px;
     }
 
-    .button {
-        font-size: 35px;
+    .first-button {
+
         padding: 10px 20px;
         border-radius: 10px;
         margin-left: 10px
