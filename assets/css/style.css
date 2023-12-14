@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Playpen Sans', cursive;
 }
-
+/* Body styles */
 body {
     height: 100vh;
     background: url(../images/5445590.jpg);
@@ -16,7 +16,7 @@ body {
     font-family: 'Playpen Sans', cursive;
     color: white;
 }
-
+/* Index.html styles */
 .open-tag {
     font-size: 40px;
     text-align: center;
@@ -62,7 +62,7 @@ h1 {
 }
 
 
-
+/* Game.html styles */
 .second-button {
     font-size: 15px;
     padding: 10px 20px;
@@ -98,7 +98,7 @@ h1 {
 #point {
     font-weight: 1000.0;
 }
-
+/* Game styles */
 .memory-game {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -178,7 +178,7 @@ h1 {
 
 
 
-/*LARGE DEVICES*/
+/*Media Queries*/
 @media (min-width: 992px) {
     .open-tag {
         font-size: 80px;
