@@ -77,10 +77,7 @@ h1 {
     width: 110px;
 }
 
-.overlay-text.visible {
-    display: flex;
-    animation: overlay-grow 500ms forwards;
-}
+
 
 .second-button:hover {
     background: rebeccapurple;

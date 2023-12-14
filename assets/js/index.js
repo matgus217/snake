@@ -78,6 +78,11 @@ function cardsDontMatch() {
 
 
 
+
+
+
+
+
 /* Reset-board function */
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
