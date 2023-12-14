@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Playpen Sans', cursive;
 }
+
 /* Body styles */
 body {
     height: 100vh;
@@ -16,6 +17,7 @@ body {
     font-family: 'Playpen Sans', cursive;
     color: white;
 }
+
 /* Index.html styles */
 .open-tag {
     font-size: 40px;
@@ -45,7 +47,7 @@ h1 {
     font-weight: 800;
     cursor: pointer;
     margin-top: 200px;
-    width: 140px;
+    width: 150px;
     margin-left: 900px;
 }
 
@@ -75,7 +77,10 @@ h1 {
     width: 110px;
 }
 
-
+.overlay-text.visible {
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+}
 
 .second-button:hover {
     background: rebeccapurple;
@@ -98,6 +103,7 @@ h1 {
 #point {
     font-weight: 1000.0;
 }
+
 /* Game styles */
 .memory-game {
     width: calc(25% - 10px);
@@ -342,7 +348,7 @@ h1 {
 
         padding: 10px 20px;
         border-radius: 10px;
-        margin-left: 10px
+        margin-left: 110px
     }
 
 
