@@ -61,7 +61,7 @@ h1 {
 
 
 
-.button2 {
+.second-button {
     font-size: 15px;
     padding: 10px 20px;
     background: white;
@@ -70,11 +70,12 @@ h1 {
     border-radius: 20px;
     font-weight: 800;
     cursor: pointer;
+    width: 110px;
 }
 
 
 
-.button2:hover {
+.second-button:hover {
     background: rebeccapurple;
 }
 
