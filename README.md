@@ -67,6 +67,11 @@ Space Memory is a memory game for children. It is a simple game with simple inst
 
 ### Testing code via validators
 
+**HTML**
+- No errors were returned when passing through the official(index.html)[W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmatgus217.github.io%2Fspace-memory%2F)
+- No errors were returned when passing through the official(game.html)[W3C validator](https://matgus217.github.io/space-memory/game.html)
+
+
 **JavaScript**
 - No errors or warnings were returned when passing through the official [JSHint validator](https://jshint.com/)
 
