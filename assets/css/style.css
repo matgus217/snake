@@ -151,6 +151,8 @@ h1 {
 
 }
 
+/* Pop-up box styles */
+
 #pop {
     visibility: hidden;
     border-radius: 20px;
@@ -230,7 +232,7 @@ h1 {
     }
 }
 
-/*medium devices*/
+/*Medium Devices*/
 
 @media (min-width: 768px) and (max-width: 991px) {
     .open-tag {
@@ -280,7 +282,7 @@ h1 {
     }
 }
 
-/*SMALL DEVICES*/
+/*Small Devices*/
 @media (min-width: 576px) and (max-width: 767px) {
     .open-tag {
         font-size: 60px;
