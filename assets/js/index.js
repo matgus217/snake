@@ -47,7 +47,7 @@ function checkCards() {
 function cardsMatch() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
-
+   
     points += 1;
     yourpoints = points;
     win += 2;
@@ -104,3 +104,6 @@ play.addEventListener("click", playAgain);
 })();
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
+
+
+      
